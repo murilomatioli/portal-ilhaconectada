@@ -6,6 +6,7 @@
     position: relative;
     margin-top: 0;
     height: 6rem;
+    box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 0.2);
 }
 .headerUl {
     top: 50%; /* Coloca a lista na metade da altura do cabeçalho */
@@ -19,6 +20,7 @@
     font-size: 27px;
     font-family: 'Fira Sans Condensed', sans-serif;
     justify-content: space-around;
+
 }
 .searchContainer{
     display: flex;
@@ -39,7 +41,7 @@
 .search::placeholder {
     font-family: monospace;
     padding-left: 10px;
-    color: rgb(212, 208, 208);
+    color: rgb(212, 208, 208); 
 }
 .searchButton {
     cursor: pointer;
@@ -58,4 +60,6 @@
     left: 50%;
     transform: translate(-50%);
     width: 10rem;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
   }

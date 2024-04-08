@@ -1,0 +1,9 @@
+.contentContainer {
+
+    width: 70%;
+    margin: 3rem auto;
+}
+.title {
+    font-size: 38px;
+    color: rgb(47, 154, 216);
+}
