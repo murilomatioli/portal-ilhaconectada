@@ -16,7 +16,27 @@
     width: 67%;
     justify-content: right;
 }
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
 
+  .modal {
+    background-color: white;
+    padding: 20px;
+    width: 50%;
+    min-height: 70%;
+    border-radius: 5px;
+    position: relative;
+  }
 .postBtn {
     border: 1px solid rgb(224, 232, 247);
     border-radius: 40px;
@@ -31,6 +51,19 @@
     font-size: 20px;
     padding: 12px;
     background-color: white;
+}
+.closeModal {
+    border: 0;
+    font-size: 16px;
+    display: inline;
+    position: absolute;
+    right: 2%;
+    top: 3.5%;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+.closeModal:hover {
+    filter: brightness(0.95);
 }
 .headerUl {
     top: 50%; /* Coloca a lista na metade da altura do cabeçalho */

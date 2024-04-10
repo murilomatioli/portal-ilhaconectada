@@ -1,5 +1,5 @@
 // Importa o modelo de Notícia
-import News from './news/News.js';
+import News from './artigo/Artigos.js';
 
 // Função para criar e salvar uma nova notícia
 async function createNews() {
