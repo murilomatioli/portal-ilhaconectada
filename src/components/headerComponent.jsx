@@ -44,6 +44,6 @@ function HeaderComponent() {
       <img src="/ilhaconectada.png" alt="Ilha Conectada" className={styles.ilhaLogo} />
     </>
   );
-}
+}s
 
 export default HeaderComponent;
