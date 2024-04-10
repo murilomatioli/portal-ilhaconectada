@@ -7,3 +7,33 @@
     font-size: 38px;
     color: rgb(47, 154, 216);
 }
+.destaques {
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    border-radius: 5px;
+    float: right;
+    color: rgb(39, 39, 39);
+    vertical-align: middle;
+}
+.destaques svg {
+    color: rgb(81, 102, 224);
+    font-size: 20px;
+    margin-right: 10px;
+}
+.destaques ul{
+    list-style: none;
+    font-size: 15px;
+    padding: 0 10px;
+}
+.destaques li {
+    padding: 10px 0;
+    transition: 0.2s;
+    width: 100%;
+}
+.destaques li:hover {
+    background-color: rgb(204, 204, 204);
+}
+.destaqueHead {
+    font-weight: 400;
+    text-indent: 20px;
+}

@@ -26,7 +26,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
+    z-index: 2;
   }
 
   .modal {
@@ -77,12 +77,14 @@
     font-size: 27px;
     font-family: 'Fira Sans Condensed', sans-serif;
     justify-content: space-around;
+    z-index: 2;
 }
 .headerUl li:hover{
     color: #ffec97;
 }
 .headerUl a{
     color: aliceblue;
+    z-index: 10;
 }
 .headerUl a:hover{
     color: #FFE897;

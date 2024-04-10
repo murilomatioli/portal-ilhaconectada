@@ -4,7 +4,6 @@ import HeaderComponent from "../components/headerComponent";
 function AboutPage (){
     return(
         <>
-        <HeaderComponent></HeaderComponent>
             <div className={styles.contentContainer}>
                 <h1 className={styles.title}>&gt; Sobre</h1>
                 

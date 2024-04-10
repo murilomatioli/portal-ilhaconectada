@@ -1,0 +1,8 @@
+.footerBody {
+    display: block;
+    position: absolute;
+    background-color: #00A7F1;
+    width: 100%;
+    height: 200px;
+    top: 100%;
+}

@@ -10,6 +10,11 @@ function HeaderComponent() {
     setMostrarOverlay(true);
   };
 
+  const handleOverlayClick = (event) => {
+    // Impede que os cliques no overlay cheguem aos elementos subjacentes
+    event.stopPropagation();
+  };
+
   return (
     <>
       <div className={styles.headerBody}>
@@ -23,17 +28,15 @@ function HeaderComponent() {
             type="button"
             value="+ Publicar"
             className={styles.postBtn}
-            onClick={handlePublicar} // Chama a função handlePublicar quando o botão é clicado
+            onClick={handlePublicar}
           />
         </div>
         {mostrarOverlay && (
-          <div className={styles.overlay}>
-
-            <div className={styles.modal}><button onClick={() => setMostrarOverlay(false)} className={styles.closeModal}>Fechar</button>
-            <TextEditorComponent></TextEditorComponent>
-              
+          <div className={styles.overlay} onClick={handleOverlayClick}>
+            <div className={styles.modal}>
+              <button onClick={() => setMostrarOverlay(false)} className={styles.closeModal}>Fechar</button>
+              <TextEditorComponent></TextEditorComponent>
             </div>
-
           </div>
         )}
         <div className={styles.searchContainer}>
@@ -47,3 +50,4 @@ function HeaderComponent() {
 }
 
 export default HeaderComponent;
+

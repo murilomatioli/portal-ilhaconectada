@@ -6,14 +6,11 @@ import FotosPage from './pages/Fotos.jsx';
 
 function AppRoutes() {
   return (
-    <Router>
       <Routes>
-        
         <Route path='/' element={<HomePage/>}></Route>
         <Route path='/sobre' element={<AboutPage/>}></Route>
         <Route path='/fotos' element={<FotosPage></FotosPage>}></Route> 
       </Routes>
-    </Router>
   );
 }
 
