@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./home.module.css"
-import format from "../formatacao.module.css"
 import HeaderComponent from "../components/headerComponent";
 function HomePage (){
     return(
