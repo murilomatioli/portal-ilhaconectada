@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './pages/Home';
-import AboutPage from './pages/About';
-import HeaderComponent from './components/headerComponent';
-import FotosPage from './pages/Fotos';
+import HomePage from './pages/Home.jsx';
+import AboutPage from './pages/About.jsx';
+import HeaderComponent from './components/headerComponent.jsx';
+import FotosPage from './pages/Fotos.jsx';
 
 function AppRoutes() {
   return (

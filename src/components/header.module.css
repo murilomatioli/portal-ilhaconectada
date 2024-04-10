@@ -8,6 +8,30 @@
     height: 6rem;
     box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 0.2);
 }
+.postContainer {
+    position: absolute;
+    top: 50%; /* Coloca a lista na metade da altura do cabeçalho */
+    transform: translateY(-50%); /* Move a lista para trás em 50% da sua própria altura */
+    display: inline-flex;
+    width: 67%;
+    justify-content: right;
+}
+
+.postBtn {
+    border: 1px solid rgb(224, 232, 247);
+    border-radius: 40px;
+    color: #00A7F1;
+    font-size: 21px;
+    padding: 8px;
+    background-color: white;
+    transition: 0.2s;
+}
+.postBtn:hover {
+    color: #00A7F1;
+    font-size: 20px;
+    padding: 12px;
+    background-color: white;
+}
 .headerUl {
     top: 50%; /* Coloca a lista na metade da altura do cabeçalho */
     transform: translateY(-50%); /* Move a lista para trás em 50% da sua própria altura */

@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 import './App.css';
-import AppRoutes from './Routes';
-import connectDB from './mongoDatabase'; // Importa a função de conexão
-
+import AppRoutes from './Routes.js';
+import connectDB from './mongoDatabase.js'; // Importa a função de conexão
 function App() {
   useEffect(() => {
     // Conectar ao MongoDB assim que o componente App for montado
