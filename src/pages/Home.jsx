@@ -7,8 +7,14 @@ function HomePage (){
     return(
         <>    
         <div className={styles.contentContainer}>
-
+            
             <h1 className={styles.title}>&gt; Início</h1>
+            <div className={styles.mainContent}>
+                <h2>Imagem principal</h2>
+                <div className={styles.mainContentDesc}>
+                    <p>Descrição | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  velit. Habitant morbi tristique senectus et netus et  pellentesque massa placerat duis ultricies lacus sed turpis tincidunt. Viverra tellus in hac habitasse platea dictumst.</p>
+                </div>
+            </div>
             <div className={styles.destaques} >
                 <h2 className={styles.destaqueHead}><AiOutlineMenu/>Destaques</h2>
             <ul>
@@ -20,6 +26,7 @@ function HomePage (){
                 <li>Aenean na vel est  vehicula vitae iaculis mauris.</li>
             </ul>
             </div>
+            <h2 className={styles.subtitle}>&gt; Mais artigos</h2>
             <div className={styles.recursosWrapper}>
                 <h2 className={styles.subtitle}>&gt; Recursos</h2>
                 <GridComponent></GridComponent>

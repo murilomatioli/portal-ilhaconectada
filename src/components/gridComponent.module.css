@@ -2,9 +2,8 @@
     display: grid;
     position: absolute;
     grid-template-columns: repeat(4,1fr);
-    gap: 20px;
+    gap: 15px;
     justify-content: center;
-
     left: 50%; 
     transform: translateX(-50%);
 }
@@ -12,6 +11,26 @@
     border: 1px solid #ccc;
     padding: 15px;
     width: 150px;
+    border-radius: 8px;
+    background-color: white;
     text-align: center;
     height: 250px;
+    transition: 0.1s;
+    position: relative;
+    border-bottom: 7px solid rgb(61, 129, 230);
+}
+.gridItem:hover {
+    padding: 18px;
+}
+.gridDescription {
+    margin: 10px 0;
+    display: flex;    
+}
+.descriptionContainer {
+    width: 100%;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid #ccc;
+    height: 40%;
 }

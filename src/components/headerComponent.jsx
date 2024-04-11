@@ -33,6 +33,7 @@ function HeaderComponent() {
           <input
             type="button"
             value="+ Publicar"
+            title="Publicar"
             className={styles.postBtn}
             onClick={handlePublicar}
           />
@@ -40,7 +41,7 @@ function HeaderComponent() {
         {mostrarOverlay && (
           <div className={styles.overlay} onClick={handleOverlayClick}>
             <div className={styles.modal}>
-              <button onClick={() => setMostrarOverlay(false)} className={styles.closeModal}>Fechar</button>
+              <button onClick={() => setMostrarOverlay(false)} title="Fechar janela" className={styles.closeModal}>Fechar</button>
               <TextEditorComponent></TextEditorComponent>
             </div>
           </div>
@@ -49,11 +50,11 @@ function HeaderComponent() {
           <input type="text" className={styles.search} placeholder="pesquisar..." />
           <input type="button" className={styles.searchButton} />
         </div>
-        <button className={styles.acessibilidadeBtn} onClick={toggleAltoContraste}>
+        <button className={styles.acessibilidadeBtn} title="Alto contaste" onClick={toggleAltoContraste}>
           <ImContrast />
         </button>
       </div>
-      <img src="/ilhaconectada.png" alt="Ilha Conectada" className={styles.ilhaLogo} />
+      <img src="/ilhaconectada.png" alt="Ilha Conectada" title="Ilha Conectada" className={styles.ilhaLogo} />
     </>
   );
 }

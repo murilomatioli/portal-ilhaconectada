@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./footer.module.css";
+import { MdOutlineEmail, MdPhone, MdLocationOn, MdChat  } from "react-icons/md";
 function FooterComponent() {
     return(
         <>
@@ -8,11 +9,10 @@ function FooterComponent() {
             <div className={styles.contact}>
                 <h2>Contato</h2>
                 <ul>
-                    <li>Telefone: 18 23456-7890</li>
-                    <li>Email: informatica@ilhasolteira.br</li>
-                    <li>Endereço: Praça Paiáguas, Centro</li>
-                    <li></li>
-                    <li></li>
+                    <li><MdPhone />Telefone: 18 23456-7890</li>
+                    <li><MdOutlineEmail />Email: informatica@ilhasolteira.br</li>
+                    <li><MdLocationOn />Endereço: Praça Paiáguas, Centro</li>
+                    <li><MdChat />CEP: 15385-000</li>
                 </ul>
             </div>
             <div>
