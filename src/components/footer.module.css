@@ -1,8 +1,26 @@
 .footerBody {
-    display: block;
     position: absolute;
+    display: flex;
     background-color: #00A7F1;
     width: 100%;
     height: 200px;
     top: 100%;
+}
+.footerWrapper {
+    height: 100%;
+    color: rgb(236, 234, 234);
+    display: flex;
+    width: 40%;
+    margin: auto;
+    font-size: large;
+    justify-content: space-around;
+}
+.footerWrapper ul {
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+}
+.footerWrapper h2 {
+    margin-bottom: 10px;
+    list-style: none;
 }
