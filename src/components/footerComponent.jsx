@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import styles from "./footer.module.css";
 import { MdOutlineEmail, MdPhone, MdLocationOn, MdChat  } from "react-icons/md";
 function FooterComponent() {
+    const [altoContraste, setAltoContraste] = useState(false);
+
+    const toggleAltoContraste = () => {
+        setAltoContraste(!altoContraste);
+    };
     return(
         <>
         <div className={styles.footerBody}>

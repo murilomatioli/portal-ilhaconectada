@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "./header.module.css";
 import { Link } from "react-router-dom";
 import TextEditorComponent from "./textEditorComponent";
-import { ImContrast } from "react-icons/im";
+import { ImContrast, ImSearch } from "react-icons/im";
 import { IoCloseOutline } from "react-icons/io5";
 
 function HeaderComponent() {
@@ -49,11 +49,15 @@ function HeaderComponent() {
         )}
         <div className={styles.searchContainer}>
           <input type="text" className={styles.search} placeholder="pesquisar..." />
-          <input type="button" className={styles.searchButton} />
+
+          <button className={styles.searchButton}><ImSearch /></button>
         </div>
-        <button className={styles.acessibilidadeBtn} title="Alto contaste" onClick={toggleAltoContraste}>
-          <ImContrast />
-        </button>
+        <div className={styles.acessibilidadeContainer}>
+          <p>Alto contraste</p>
+          <button className={styles.acessibilidadeBtn} title="Alto contaste" onClick={toggleAltoContraste}>
+            <ImContrast />
+          </button>
+        </div>
       </div>
       <img src="/ilhaconectada.png" alt="Ilha Conectada" title="Ilha Conectada" className={styles.ilhaLogo} />
     </>

@@ -32,3 +32,12 @@
     margin-bottom: 10px;
     list-style: none;
 }
+@media screen and (max-width: 600px) {
+    .footerWrapper {
+        margin: 0 10px;
+    }
+    .footerBody {
+        height: fit-content; /* Defina a altura do footer conforme necessário */
+        margin-top: auto; /* Isso empurra o footer para o final da página */
+    }
+}

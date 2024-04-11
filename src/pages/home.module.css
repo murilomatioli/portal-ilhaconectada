@@ -7,8 +7,9 @@
 .mainContent {
     width: 400px;
     background-color: #69b6e9;
-    border-radius: 10px;
+    border-radius: 20px;
     height: 400px;
+
     position: relative;
 }
 .mainContentTitle {
@@ -19,7 +20,7 @@
 }
 .mainContentTitleCont {
     width: 100%;
-    background-color: rgb(255, 229, 111);
+    background-color: rgb(253, 235, 155);
     border-radius: 10px 10px 0 0;
     height: fit-content;
 }

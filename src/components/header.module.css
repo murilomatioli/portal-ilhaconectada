@@ -16,13 +16,25 @@
     width: 67%;
     justify-content: right;
 }
+.acessibilidadeContainer {
+    position: absolute;
+    transform: translateY(-50%);
+    right: 1%;
+    padding: 5px;
+    border-radius: 50px;
+    top: 50%;
+    background-color: #fcfcfc;
+    width: fit-content;
+
+}
+.acessibilidadeContainer p{
+    display: inline;
+    margin-right: 10px;
+}
 .acessibilidadeBtn {
     width: 25px;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    margin-right: 20px;
-    transform: translateY(-50%);
+    display: inline;
+    vertical-align: middle;
     height: 25px;
     border: 0;
     font-size: 25px;
@@ -31,8 +43,7 @@
 }
 .altoContraste {
     background-color: black;
-    color: white;
-    
+
   }
   
 .overlay {
@@ -117,7 +128,7 @@
     top: 50%;
     transform: translateY(-50%);
     justify-content: end;
-    right: 5%;
+    right: 10%;
   }
 .search {
     border: 0;
@@ -135,12 +146,14 @@
 .searchButton {
     cursor: pointer;
     position: absolute;
-    background-color: #FFE897;
+    background-color: white;
     border: 0;
-    border-left: 1px solid rgb(197, 197, 197);
     height: 100%;
     border-radius: 0 20px 20px 0;
     width: 13%;
+}
+.searchButton svg{
+    font-size: 25px;
 }
 .ilhaLogo {
     position: absolute;
@@ -151,3 +164,56 @@
     border-radius: 50%;
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
   }
+
+
+@media screen and (max-width: 600px) {
+    .ilhaLogo {
+        width: 7rem;
+        left: 10%;
+    }
+    .searchContainer {
+        top: 25%;
+        right: 3%;
+    }
+    .search {
+        width: 12rem;
+    }
+    .acessibilidadeContainer {
+    right: 3%;
+    top: 70%;
+    background-color: #ffffff;
+    }
+    .searchButton svg{
+        font-size: 25px;
+    }
+    .searchButton {
+        height: 100%;
+        padding: 0;
+        width: 20%;
+    }
+    .postBtn {
+        font-size: 19px;
+        padding: 4px;
+        background-color: white;
+    }
+    .postBtn:hover {
+        font-size: 19px;
+        padding: 4px;
+    }
+    .postContainer {
+        top: 70%; /* Coloca a lista na metade da altura do cabeçalho */
+        transform: translateY(-50%); /* Move a lista para trás em 50% da sua própria altura */
+        width: 70%;
+    }
+    .headerUl {
+
+        margin: 0;
+        left: 20%;
+        display: block;
+        width: fit-content;
+        color: aliceblue;
+        font-size: 22px;
+
+        z-index: 1;
+    }
+}

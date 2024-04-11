@@ -18,6 +18,7 @@
     transition: 0.1s;
     position: relative;
     border-bottom: 7px solid rgb(61, 129, 230);
+    display: block;
 }
 .gridItem:hover {
     padding: 18px;
@@ -33,4 +34,10 @@
     bottom: 0;
     border-top: 1px solid #ccc;
     height: 40%;
+}
+
+@media screen and (max-width: 750px) {
+    .gridContainer {
+        grid-template-columns: repeat(3,1fr);
+    }
 }
