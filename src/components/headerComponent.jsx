@@ -3,6 +3,7 @@ import styles from "./header.module.css";
 import { Link } from "react-router-dom";
 import TextEditorComponent from "./textEditorComponent";
 import { ImContrast } from "react-icons/im";
+import { IoCloseOutline } from "react-icons/io5";
 
 function HeaderComponent() {
   const [mostrarOverlay, setMostrarOverlay] = useState(false);
@@ -41,7 +42,7 @@ function HeaderComponent() {
         {mostrarOverlay && (
           <div className={styles.overlay} onClick={handleOverlayClick}>
             <div className={styles.modal}>
-              <button onClick={() => setMostrarOverlay(false)} title="Fechar janela" className={styles.closeModal}>Fechar</button>
+              <button onClick={() => setMostrarOverlay(false)} title="Fechar janela" className={styles.closeModal}><IoCloseOutline /></button>
               <TextEditorComponent></TextEditorComponent>
             </div>
           </div>

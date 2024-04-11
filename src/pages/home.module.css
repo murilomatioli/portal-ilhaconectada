@@ -9,8 +9,19 @@
     background-color: #69b6e9;
     border-radius: 10px;
     height: 400px;
-
     position: relative;
+}
+.mainContentTitle {
+    color: #20a2ac;
+    padding: 5px 0;
+    font-weight: 500;
+    margin-left: 5px;
+}
+.mainContentTitleCont {
+    width: 100%;
+    background-color: rgb(255, 229, 111);
+    border-radius: 10px 10px 0 0;
+    height: fit-content;
 }
 .mainContentDesc {
     position: absolute;

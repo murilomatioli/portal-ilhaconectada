@@ -10,11 +10,15 @@ function HomePage (){
             
             <h1 className={styles.title}>&gt; Início</h1>
             <div className={styles.mainContent}>
-                <h2>Imagem principal</h2>
+                <div className={styles.mainContentTitleCont}>
+                    <h2 className={styles.mainContentTitle}>Imagem principal</h2>
+                </div>
                 <div className={styles.mainContentDesc}>
                     <p>Descrição | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  velit. Habitant morbi tristique senectus et netus et  pellentesque massa placerat duis ultricies lacus sed turpis tincidunt. Viverra tellus in hac habitasse platea dictumst.</p>
                 </div>
             </div>
+
+
             <div className={styles.destaques} >
                 <h2 className={styles.destaqueHead}><AiOutlineMenu/>Destaques</h2>
             <ul>
