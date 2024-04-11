@@ -1,8 +1,7 @@
 import React from "react";
 import styles from "./home.module.css"
-import HeaderComponent from "../components/headerComponent";
 import { AiOutlineMenu } from "react-icons/ai";
-import FooterComponent from "../components/footerComponent";
+import GridComponent from "../components/gridComponent";
 
 function HomePage (){
     return(
@@ -10,7 +9,6 @@ function HomePage (){
         <div className={styles.contentContainer}>
 
             <h1 className={styles.title}>&gt; Início</h1>
-            <p></p>
             <div className={styles.destaques} >
                 <h2 className={styles.destaqueHead}><AiOutlineMenu/>Destaques</h2>
             <ul>
@@ -22,6 +20,11 @@ function HomePage (){
                 <li>Aenean na vel est  vehicula vitae iaculis mauris.</li>
             </ul>
             </div>
+            <div className={styles.recursosWrapper}>
+                <h2 className={styles.subtitle}>&gt; Recursos</h2>
+                <GridComponent></GridComponent>
+            </div>
+            
         </div>
 
         </>

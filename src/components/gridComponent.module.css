@@ -1,0 +1,17 @@
+.gridContainer {
+    display: grid;
+    position: absolute;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    justify-content: center;
+
+    left: 50%; 
+    transform: translateX(-50%);
+}
+.gridItem {
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 150px;
+    text-align: center;
+    height: 250px;
+}

@@ -1,6 +1,6 @@
 .contentContainer {
-
-    width: 70%;
+    width: 75%;
+    height: 100vh;
     margin: 3rem auto;
 }
 .title {
@@ -14,6 +14,7 @@
     float: right;
     color: rgb(39, 39, 39);
     vertical-align: middle;
+    display: inline;
 }
 .destaques svg {
     color: rgb(81, 102, 224);
@@ -36,4 +37,8 @@
 .destaqueHead {
     font-weight: 400;
     text-indent: 20px;
+}
+.subtitle {
+    font-size: 30px;
+    color: rgb(47, 154, 216);
 }

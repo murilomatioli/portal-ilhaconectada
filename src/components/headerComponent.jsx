@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import styles from "./header.module.css";
 import { Link } from "react-router-dom";
 import TextEditorComponent from "./textEditorComponent";
+import { ImContrast } from "react-icons/im";
 
 function HeaderComponent() {
   const [mostrarOverlay, setMostrarOverlay] = useState(false);
+  const [altoContraste, setAltoContraste] = useState(false);
 
   const handlePublicar = () => {
     setMostrarOverlay(true);
@@ -15,9 +17,13 @@ function HeaderComponent() {
     event.stopPropagation();
   };
 
+  const toggleAltoContraste = () => {
+    setAltoContraste(!altoContraste);
+  };
+
   return (
     <>
-      <div className={styles.headerBody}>
+      <div className={altoContraste ? `${styles.headerBody} ${styles.altoContraste}` : styles.headerBody}>
         <ul className={styles.headerUl}>
           <li><Link to="/">Página Inicial</Link></li>
           <li><Link to="/sobre">Sobre</Link></li>
@@ -43,6 +49,9 @@ function HeaderComponent() {
           <input type="text" className={styles.search} placeholder="pesquisar..." />
           <input type="button" className={styles.searchButton} />
         </div>
+        <button className={styles.acessibilidadeBtn} onClick={toggleAltoContraste}>
+          <ImContrast />
+        </button>
       </div>
       <img src="/ilhaconectada.png" alt="Ilha Conectada" className={styles.ilhaLogo} />
     </>
@@ -50,4 +59,3 @@ function HeaderComponent() {
 }
 
 export default HeaderComponent;
-
