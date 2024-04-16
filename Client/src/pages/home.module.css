@@ -1,0 +1,83 @@
+.contentContainer {
+    width: 75%;
+    height: 100vh;
+    margin: 3rem auto;
+    position: relative;
+}
+.mainContent {
+    width: 400px;
+    background-color: #69b6e9;
+    border-radius: 20px;
+    height: 400px;
+
+    position: relative;
+}
+.mainContentTitle {
+    color: #20a2ac;
+    padding: 5px 0;
+    font-weight: 500;
+    margin-left: 5px;
+}
+.mainContentTitleCont {
+    width: 100%;
+    background-color: rgb(253, 235, 155);
+    border-radius: 10px 10px 0 0;
+    height: fit-content;
+}
+.mainContentDesc {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 30%;
+    text-indent: 20px;
+}
+.mainContentDesc p{
+    margin-left: 7px;
+}
+.title {
+    font-size: 38px;
+    color: rgb(47, 154, 216);
+    
+}
+.destaques {
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    border-radius: 5px;
+
+    color: rgb(39, 39, 39);
+    vertical-align: middle;
+    display: inline;
+    position: absolute;
+    top: 78px; /* Ajuste conforme necessário */
+    right: 0; /* Ajuste conforme necessário */
+}
+
+.destaques svg {
+    color: rgb(81, 102, 224);
+    font-size: 20px;
+    margin-right: 10px;
+}
+.destaques ul{
+    list-style: none;
+    font-size: 15px;
+    padding: 0 10px;
+}
+.destaques li {
+    padding: 10px 0;
+    transition: 0.2s;
+    width: 100%;
+}
+.destaques li:hover {
+    background-color: rgb(204, 204, 204);
+}
+.destaqueHead {
+    font-weight: 400;
+    text-indent: 20px;
+}
+.subtitle {
+    font-size: 30px;
+    color: rgb(47, 154, 216);
+    display: block;
+}
