@@ -21,7 +21,19 @@
     background-color: rgb(47, 154, 216);
     color: white;
     border-radius: 8px;
+
 }
 .publicarBtn:hover {
     filter: brightness(0.95);
+}
+.novoProjeto {
+    border: 0;
+    font-size: 18px;
+
+    padding: 5px;
+    width: 15rem;
+    background-color: rgb(47, 154, 216);
+    color: white;
+    border-radius: 8px;
+    margin-top: 20px;
 }

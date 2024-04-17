@@ -63,7 +63,8 @@
     background-color: white;
     padding: 20px;
     width: 50%;
-    min-height: 70%;
+    min-height: 60%;
+    max-height: 95vh;
     border-radius: 5px;
     position: relative;
   }
