@@ -6,6 +6,7 @@ function TextEditorComponent() {
   const [content, setContent] = useState("");
 
   const collectData = async (e) => {
+    alert("Conteúdo salvo!")
     e.preventDefault();
     let result = await fetch('http://localhost:4000/', {
       method: 'post',
