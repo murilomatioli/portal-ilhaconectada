@@ -6,7 +6,15 @@ function GridComponent() {
     useEffect(() => {
         fetchProjetos();
     }, []);
-    
+
+    const limitarDescricao = (descricao, limite) => {
+        if (descricao.length > limite) {
+            return descricao.slice(0, limite) + '...';
+        } else {
+            return descricao;
+        }
+    };
+
     const fetchProjetos = async () => {
         try {
             const response = await fetch("http://localhost:4000/projetos");
@@ -26,7 +34,7 @@ function GridComponent() {
                     <div className={styles.gridItem}>
                         <h2>{projeto.title}</h2>
                         <div className={styles.descriptionContainer}>
-                            <p className={styles.gridDescription}>{projeto.description}</p>
+                            <p className={styles.gridDescription}>{limitarDescricao(projeto.description, 150)}</p>
                         </div>
                     </div>
                     )

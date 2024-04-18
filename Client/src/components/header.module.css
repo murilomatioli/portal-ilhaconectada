@@ -52,11 +52,26 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.5); 
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 2;
+  }
+  .alternarBtn {
+    cursor: pointer;
+    margin-left: 8%;
+    border: 0;
+    border-radius: 8px;
+    height: 30px;
+    width: 20%;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(81, 170, 69);
+    margin-top: 1rem;
+  }
+  .alternarBtn:hover {
+    filter: brightness(0.95);
   }
 
   .modal {
