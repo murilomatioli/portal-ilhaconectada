@@ -32,7 +32,7 @@ function HomePage (){
             </div>
             <h2 className={styles.subtitle}>&gt; Mais artigos</h2>
             <div className={styles.recursosWrapper}>
-                <h2 className={styles.subtitle}>&gt; Recursos</h2>
+                <h2 className={styles.subtitle}>&gt; Principais projetos</h2>
                 <GridComponent></GridComponent>
             </div>
             

@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import styles from "./header.module.css";
 import { Link } from "react-router-dom";
 import TextEditorComponent from "./textEditorComponent";
+import PublishProjectComponent from "./publishProject";
 import { ImContrast, ImSearch } from "react-icons/im";
 import { IoCloseOutline } from "react-icons/io5";
 
 function HeaderComponent() {
   const [mostrarOverlay, setMostrarOverlay] = useState(false);
+  const [mostrarTextEditor, setMostrarTextEditor] = useState(true);
   const [altoContraste, setAltoContraste] = useState(false);
 
   const handlePublicar = () => {
@@ -20,6 +22,9 @@ function HeaderComponent() {
 
   const toggleAltoContraste = () => {
     setAltoContraste(!altoContraste);
+  };
+  const alternarComponente = () => {
+    setMostrarTextEditor(!mostrarTextEditor); // Alterna entre exibir o editor de texto e o formulário
   };
 
   return (
@@ -43,7 +48,8 @@ function HeaderComponent() {
           <div className={styles.overlay} onClick={handleOverlayClick}>
             <div className={styles.modal}>
               <button onClick={() => setMostrarOverlay(false)} title="Fechar janela" className={styles.closeModal}><IoCloseOutline /></button>
-              <TextEditorComponent></TextEditorComponent>
+              {mostrarTextEditor ? <TextEditorComponent /> : <PublishProjectComponent/>}
+              <button onClick={alternarComponente} className={styles.alternarBtn}>Alternar</button>
             </div>
           </div>
         )}

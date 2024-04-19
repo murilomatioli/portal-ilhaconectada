@@ -29,12 +29,13 @@
     display: flex;    
 }
 .descriptionContainer {
-    width: 100%;
+
+    max-width: 100%;
     left: 0;
     position: absolute;
     bottom: 0;
     border-top: 1px solid #ccc;
-    height: 40%;
+    height: 55%;
 }
 
 @media screen and (max-width: 750px) {

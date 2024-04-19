@@ -1,0 +1,40 @@
+.contentWrapper {
+    width: 100%;
+}
+.descriptionInput {
+    margin: 20px auto;
+    resize: vertical;
+    display: block;
+    padding: 15px;
+    width: 80%;
+    height: 350px;
+    border-radius: 20px;
+}
+.titleInput {
+    margin-top: 20px;
+    margin-left: 8%;
+    height: 30px;
+    width: 70%;
+    border-radius: 20px;
+    padding: 5px;
+    border: #acacac 1px solid;
+}
+.title {
+    display: inline;
+    font-size: 38px;
+    color: rgb(47, 154, 216);
+}
+.publicarBtn {
+    cursor: pointer;
+    border: 0;
+    font-size: 18px;
+    padding: 5px;
+    width: 15rem;
+    background-color: rgb(47, 154, 216);
+    color: white;
+    border-radius: 8px;
+    margin-left: 8%;
+}
+.publicarBtn:hover {
+    filter: brightness(0.95);
+}

@@ -22,9 +22,8 @@ function TextEditorComponent() {
       <form onSubmit={collectData}>
         <h1 className={styles.title}>&gt; Publicar novo artigo</h1>
         <textarea className={styles.textArea} value={content} onChange={(e) => setContent(e.target.value)} placeholder="Escreva suas ideias..."></textarea>
-        <button type="submit" title="Publicar conteúdo" className={styles.publicarBtn}>Publicar</button>
+        <button type="submit" title="Publicar conteúdo" className={styles.publicarBtn}>Publicar conteúdo</button>
       </form>
-      <button title="Publicar projeto" className={styles.novoProjeto}>Publicar projeto</button>
     </>
   );
 }
