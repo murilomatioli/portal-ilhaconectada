@@ -19,6 +19,7 @@ app.get("/projetos", async(req, res) => {
     }
 });
 
+
 app.patch("/projetos/:id", async(req, res) => {
     const { id } = req.params;
     const { title, description } = req.body;
@@ -35,6 +36,16 @@ app.patch("/projetos/:id", async(req, res) => {
         res.status(400).json({ message: err.message });
     }
 });
+
+app.delete("/projetos", async (req, res) => {
+    try {
+        const result = await Projeto.deleteMany({});
+        res.json({ message: `${result.deletedCount} projetos excluídos com sucesso` });
+    } catch (err) {
+        res.status(500).json({ message: err.message });
+    }
+});
+
 app.delete("/projetos/:id", async (req, res) => {
     const { id } = req.params;
     try {
@@ -65,9 +76,9 @@ app.get("/projetos/:id", async (req, res) => {
 
 
 app.post("/projetos", async(req, res) => {
-    const { title, description } = req.body;
+    const { title, description, content, author } = req.body;
     try {
-        const novoProjeto = new Projeto({ title, description });
+        const novoProjeto = new Projeto({ title, description, content, author });
         const projetoSalvo = await novoProjeto.save();
         res.status(201).json(projetoSalvo);
     } catch (err) {
