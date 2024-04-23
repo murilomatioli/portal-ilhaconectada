@@ -1,0 +1,24 @@
+.articleContainer {
+    width: 75%;
+    margin: 3% auto;
+}
+.articleTitle {
+    color: rgb(47, 154, 216);
+    padding: 5px 0;
+    font-weight: 500;
+    font-size: 40px;
+    margin-left: 5px;
+}
+.articleDescription {
+    font-size: 17px;
+    font-style: italic;
+}
+.articleAuthor {
+    font-weight: bold;
+    font-size: 22px;
+}
+.articleContent {
+    text-indent: 25px;
+    font-size: 18px;
+    hyphens: auto;
+}

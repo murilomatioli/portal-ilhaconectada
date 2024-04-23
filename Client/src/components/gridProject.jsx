@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./gridProject.module.css";
+import { Link } from "react-router-dom"; // Importe o componente Link
+
 function GridComponent() {
     const [projetos, setProjetos] = useState([]);
 
@@ -31,12 +33,15 @@ function GridComponent() {
             {
                 projetos.slice(0, 4).map(projeto => { 
                     return (
-                    <div className={styles.gridItem}>
-                        <h2>{projeto.title}</h2>
-                        <div className={styles.descriptionContainer}>
-                            <p className={styles.gridDescription}>{limitarDescricao(projeto.description, 150)}</p>
-                        </div>
-                    </div>
+                        // Envolve o gridContainer com um Link e define o to para articles/:id
+                        <Link to={`/article/${projeto._id}`} className={styles.gridItem} key={projeto.id}  style={{ textDecoration: 'none', color: 'inherit' }}>
+                            <div>
+                                <h2 className={styles.ArticleTitle}>{projeto.title}</h2>
+                                <div className={styles.descriptionContainer}>
+                                    <p className={styles.gridDescription}>{limitarDescricao(projeto.description, 150)}</p>
+                                </div>
+                            </div>
+                        </Link>
                     )
                 })
             }
@@ -47,4 +52,3 @@ function GridComponent() {
 }
 
 export default GridComponent;
-

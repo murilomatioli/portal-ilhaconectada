@@ -9,11 +9,11 @@
 }
 .gridItem {
     border: 1px solid #ccc;
-    padding: 15px;
+    padding: 3px 10px 17px 10px;
     width: 150px;
     border-radius: 8px;
     background-color: white;
-    text-align: center;
+
     height: 250px;
     transition: 0.1s;
     position: relative;
@@ -21,15 +21,21 @@
     display: block;
 }
 .gridItem:hover {
-    padding: 18px;
+    padding: 3px 13px 23px 13px;
     cursor: pointer;
 }
+.ArticleTitle {
+    font-size: 20px;
+    text-align: center;
+}
 .gridDescription {
-    margin: 10px 0;
-    display: flex;    
+    margin: 6px 0;
+    display: flex;
+    padding: 0 10px;
+    hyphens: auto;
+    text-indent: 10px;
 }
 .descriptionContainer {
-
     max-width: 100%;
     left: 0;
     position: absolute;
