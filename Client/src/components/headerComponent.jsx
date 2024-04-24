@@ -34,8 +34,9 @@ function HeaderComponent() {
           <li><Link to="/">Página Inicial</Link></li>
           <li><Link to="/sobre">Sobre</Link></li>
           <li><Link to="/fotos">Fotos</Link></li>
+          <li><Link to="/article">Projetos e artigos</Link></li>
         </ul>
-        <div className={styles.postContainer}>
+        {/*<div className={styles.postContainer}>
           <input
             type="button"
             value="+ Publicar"
@@ -53,17 +54,20 @@ function HeaderComponent() {
             </div>
           </div>
         )}
+        */}
+        
         <div className={styles.searchContainer}>
           <input type="text" className={styles.search} placeholder="pesquisar..." />
 
           <button className={styles.searchButton}><ImSearch /></button>
         </div>
-        <div className={styles.acessibilidadeContainer}>
+        {/* <div className={styles.acessibilidadeContainer}>
           <p>Alto contraste</p>
           <button className={styles.acessibilidadeBtn} title="Alto contaste" onClick={toggleAltoContraste}>
             <ImContrast />
           </button>
         </div>
+        */}
       </div>
       <img src="/ilhaconectada.png" alt="Ilha Conectada" title="Ilha Conectada" className={styles.ilhaLogo} />
     </>

@@ -1,19 +1,20 @@
-.contentWrapper {
-    width: 100%;
+.formContainer {
+    width: 75%;
+    margin: 3rem auto;
 }
 .descriptionInput {
-    margin: 20px auto;
+    margin-bottom: 3%;
     resize: vertical;
     display: block;
     padding: 15px;
     width: 80%;
     height: 350px;
-    border-radius: 20px;
+    border-radius: 20px 20px 20px 20px;
     border: #acacac 1px solid;
 }
 .titleInput {
     margin-top: 20px;
-    margin-left: 8%;
+    margin-left: 9%;
     height: 30px;
     width: 70%;
     border-radius: 20px;
@@ -22,7 +23,7 @@
 }
 .authorInput {
     margin-top: 20px;
-    margin-left: 8%;
+    margin-left: 9%;
     height: 30px;
     width: 50%;
     border-radius: 20px;
@@ -33,6 +34,18 @@
     display: inline;
     font-size: 38px;
     color: rgb(47, 154, 216);
+}
+.editorBtn {
+    border: 1px solid #888;
+    width: 35px;
+    font-weight: bold;
+    background-color: white;
+    height: 35px;
+}
+.textEditorContainer {
+    margin-top: 1%;
+    margin-left: 9%;
+
 }
 .publicarBtn {
     cursor: pointer;

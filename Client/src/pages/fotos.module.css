@@ -1,6 +1,7 @@
 .contentContainer {
     width: 70%;
     margin: 3rem auto;
+    min-height: 57.9vh;
 }
 .title {
     font-size: 38px;

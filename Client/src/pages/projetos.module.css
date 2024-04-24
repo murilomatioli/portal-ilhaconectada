@@ -1,0 +1,45 @@
+.contentContainer {
+    width: 70%;
+    margin: auto;
+    min-height: 57.9vh;
+    margin-bottom: 5%;
+}
+.title {
+    font-size: 38px;
+    color: rgb(47, 154, 216);
+}
+.gridContainer {
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    width: 100%;
+}
+
+.gridItem {
+    border: 1px solid rgb(189, 189, 189);
+    transition: 0.15s;
+    border-radius: 8px;
+    background-color: rgb(247, 247, 247);
+}
+.ArticleAuthor {
+    padding: 5px;
+    border-bottom: 1px solid #b9b9b9;
+    margin: 0;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+
+}
+.gridItem:hover {
+    margin: -5px;
+}
+.ArticleTitle {
+    padding: 5px;
+    color: rgb(47, 154, 216);
+    margin: 0;
+    border-bottom: 1px solid #b9b9b9;
+}
+.gridDescription {
+    margin: 5px;
+}

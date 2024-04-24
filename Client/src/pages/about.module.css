@@ -1,6 +1,17 @@
 .contentContainer {
     width: 70%;
     margin: 3rem auto;
+    min-height: 57.9vh;
+
+}
+.paragrafo {
+    font-size: 20px;
+    hyphens: auto;
+    word-spacing: 3px;
+    text-indent: 20px;
+}
+.emphasis {
+    font-weight: bold;
 }
 .title {
     font-size: 38px;

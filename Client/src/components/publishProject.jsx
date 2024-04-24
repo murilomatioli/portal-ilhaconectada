@@ -8,6 +8,7 @@ function PublishProjectComponent() {
   const [author, setAuthor] = useState("");
   const collectData = async (e) => {
 
+    
     alert("Projeto publicado!")
     e.preventDefault();
     let result = await fetch('http://localhost:4000/projetos', {
@@ -29,7 +30,11 @@ function PublishProjectComponent() {
         <input type="text" className={styles.titleInput} value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Título do artigo"></input>
         <input type="text" className={styles.authorInput} value={author} onChange={(e) => setAuthor(e.target.value)} placeholder="Autor"></input>
         <input type="text" className={styles.titleInput} value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Descrição do artigo"></input>
-        <textarea className={styles.descriptionInput} value={content} onChange={(e) => setContent(e.target.value)} placeholder="Conteúdo do artigo"></textarea>
+
+
+        <div className={styles.textEditorContainer}>
+          <textarea className={styles.descriptionInput} value={content} onChange={(e) => setContent(e.target.value)} placeholder="Conteúdo do artigo"></textarea>
+        </div>
         <button type="submit" title="Publicar artigo" className={styles.publicarBtn}>Publicar artigo</button>
       </form>
     

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./about.module.css"
+import styles from "./fotos.module.css"
 import HeaderComponent from "../components/headerComponent";
 function FotosPage (){
     return(
