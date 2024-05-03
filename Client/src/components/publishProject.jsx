@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import styles from "../components/publishProject.module.css";
+import ReactQuill from 'react-quill';
+import 'react-quill/dist/quill.snow.css'
 
 function PublishProjectComponent() {
   const [title, setTitle] = useState("");
@@ -33,8 +35,16 @@ function PublishProjectComponent() {
 
 
         <div className={styles.textEditorContainer}>
-          <textarea className={styles.descriptionInput} value={content} onChange={(e) => setContent(e.target.value)} placeholder="Conteúdo do artigo"></textarea>
+          <ReactQuill
+            theme="snow"
+            style={{height:'200px' }}
+            value={content}
+            onChange={(value) => setContent(value)} 
+            placeholder="Conteúdo do artigo"
+            
+          />
         </div>
+
         <button type="submit" title="Publicar artigo" className={styles.publicarBtn}>Publicar artigo</button>
       </form>
     

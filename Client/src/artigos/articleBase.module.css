@@ -1,11 +1,15 @@
 .articleContainer {
     width: 75%;
-    margin: 3% auto;
+    margin: auto;
     min-height: 56.2vh;
+    background-color: white;
+    padding: 1% 2%;
+    box-shadow: 1px 0px 8px 0px rgba(0, 0, 0, 0.3);
 }
 .articleTitle {
     color: rgb(47, 154, 216);
     padding: 5px 0;
+    margin-top: 5%;
     font-weight: 500;
     font-size: 40px;
     margin-left: 5px;
@@ -21,7 +25,12 @@
     font-size: 22px;
 }
 .articleContent {
-    text-indent: 25px;
     font-size: 18px;
     hyphens: auto;
+}
+.articleContent p {
+    text-indent: 25px;
+}
+.articleContent h3 {
+    margin: 0;
 }

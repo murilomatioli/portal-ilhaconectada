@@ -10,7 +10,7 @@ function GridComponent() {
     }, []);
 
     const limitarDescricao = (descricao, limite) => {
-        if (descricao.length > limite) {
+        if (descricao && descricao.length > limite) {
             return descricao.slice(0, limite) + '...';
         } else {
             return descricao;

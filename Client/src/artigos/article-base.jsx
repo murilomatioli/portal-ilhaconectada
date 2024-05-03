@@ -30,7 +30,7 @@ function ArticleBase() {
           <h1 className={styles.articleTitle}>{articleData.title}</h1>
           <p className={styles.articleDescription}>{articleData.description}</p>
           <p className={styles.articleAuthor}>Por: {articleData.author}</p>
-          <p className={styles.articleContent}>{articleData.content}</p>
+          <p dangerouslySetInnerHTML={{__html:articleData.content}} className={styles.articleContent}/>
     
         </>
       ) : (

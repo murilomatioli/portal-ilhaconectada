@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styles from "./header.module.css";
 import { Link } from "react-router-dom";
-import TextEditorComponent from "./textEditorComponent";
 import PublishProjectComponent from "./publishProject";
 import { ImContrast, ImSearch } from "react-icons/im";
 import { IoCloseOutline } from "react-icons/io5";

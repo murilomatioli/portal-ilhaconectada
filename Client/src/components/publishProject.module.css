@@ -1,3 +1,4 @@
+
 .formContainer {
     width: 75%;
     margin: 3rem auto;
@@ -9,7 +10,6 @@
     padding: 15px;
     width: 80%;
     height: 350px;
-    border-radius: 20px 20px 20px 20px;
     border: #acacac 1px solid;
 }
 .titleInput {
@@ -17,7 +17,6 @@
     margin-left: 9%;
     height: 30px;
     width: 70%;
-    border-radius: 20px;
     padding: 5px;
     border: #acacac 1px solid;
 }
@@ -26,7 +25,6 @@
     margin-left: 9%;
     height: 30px;
     width: 50%;
-    border-radius: 20px;
     padding: 5px;
     border: #acacac 1px solid;
 }
@@ -45,9 +43,11 @@
 .textEditorContainer {
     margin-top: 1%;
     margin-left: 9%;
-
+    background-color: white;
+    height: 240px;
 }
 .publicarBtn {
+    margin-top: 5%;
     cursor: pointer;
     border: 0;
     font-size: 18px;

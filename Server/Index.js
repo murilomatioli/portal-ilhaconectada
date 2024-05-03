@@ -9,7 +9,6 @@ require('./db/connection');
 const Post = require('./Models/Post')
 const Projeto = require('./Models/Projetos');
 
-
 app.get("/projetos", async(req, res) => {
     try {
         const projetos = await Projeto.find();
@@ -71,9 +70,6 @@ app.get("/projetos/:id", async (req, res) => {
         res.status(500).json({ message: err.message });
     }
 });
-
-
-
 
 app.post("/projetos", async(req, res) => {
     const { title, description, content, author } = req.body;
