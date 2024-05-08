@@ -1,14 +1,16 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 const projetoSchema = new mongoose.Schema ({
-    title:String,
-    description:String,
-    content:String,
-    author:String,
-    image: {
-        data: Buffer,
-        contentType: String
-    }
-})
+    title: String,
+    description: String,
+    content: String,
+    author: String,
+    images: [
+        {
+            data: Buffer,
+            contentType: String
+        }
+    ]
+});
 
-module.exports = mongoose.model("projetos",projetoSchema)
+module.exports = mongoose.model("projetos", projetoSchema);
