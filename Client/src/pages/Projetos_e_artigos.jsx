@@ -42,6 +42,7 @@ function ProjetoseArtigosPage() {
                                     <div className={styles.descriptionContainer}>
                                         <p className={styles.gridDescription}>{limitarDescricao(projeto.description, 220)}</p>
                                     </div>
+                                
                                 </div>
                             </Link>
                         )

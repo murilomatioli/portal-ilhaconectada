@@ -16,7 +16,6 @@
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
-    opacity: 0;
 }
 .cardh2 {
     font-size: 28px;

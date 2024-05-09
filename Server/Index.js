@@ -1,6 +1,11 @@
+const multer = require('multer');
+const storage = require('./multerConfig').storage;
+
 const express = require('express');
 const app = express();
 app.use(express.json())
+
+const upload = multer({storage: storage})
 
 const cors = require('cors')
 app.use(cors());
@@ -71,7 +76,7 @@ app.get("/projetos/:id", async (req, res) => {
     }
 });
 
-app.post("/projetos", async(req, res) => {
+app.post("/projetos", async (req, res) => {
     const { title, description, content, author } = req.body;
     try {
         const novoProjeto = new Projeto({ title, description, content, author });
@@ -82,10 +87,17 @@ app.post("/projetos", async(req, res) => {
     }
 });
 
+app.post("/projetos/upload", upload.single('file'), async (req, res) => {
+    return res.json(req.file.filename);
+});
+
+
 app.post("/", async(req,res)=> {
     let post = new Post(req.body);
     let result = await post.save();
     res.send(result)
 })
 
-app.listen(4000);
+app.listen(4000), () => {
+        console.log('app is running!')
+};

@@ -16,6 +16,7 @@ function GridComponent() {
             return descricao;
         }
     };
+    
 
     const fetchProjetos = async () => {
         try {

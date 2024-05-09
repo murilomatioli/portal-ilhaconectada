@@ -10,27 +10,17 @@ function PublishProjectComponent() {
   const [description, setDescription] = useState("");
   const [content, setContent] = useState("");
   const [author, setAuthor] = useState("");
-  const [images, setImages] = useState([]); // Adicionando estado para as imagens
 
   const collectData = async (e) => {
     e.preventDefault();
-
-    // Criar um array de objetos contendo os dados das imagens selecionadas
-    const imageFiles = images.map(image => ({
-      data: image.data,
-      contentType: image.type
-    }));
-
-    // Criar o objeto de dados do projeto com os dados do formulário e as imagens
+  
     const projectData = {
       title,
       author,
       description,
       content,
-      images: imageFiles // Adicionando as imagens ao objeto de dados do projeto
     };
-
-    // Enviar o objeto de dados do projeto para o servidor
+    
     try {
       const result = await fetch('http://localhost:4000/projetos', {
         method: 'POST',
@@ -39,7 +29,7 @@ function PublishProjectComponent() {
           'Content-Type': 'application/json'
         }
       });
-
+  
       const data = await result.json();
       localStorage.setItem("content", JSON.stringify(data));
       alert("Projeto publicado!");
@@ -47,6 +37,7 @@ function PublishProjectComponent() {
       console.error("Erro ao publicar projeto:", error);
     }
   };
+  
   
   return (
     <>
@@ -65,7 +56,7 @@ function PublishProjectComponent() {
             placeholder="Conteúdo do artigo"
           />
         </div>
-        <ImageUploadComponent setImages={setImages} />
+        <ImageUploadComponent/>
 
         <button type="submit" title="Publicar artigo" className={styles.publicarBtn}>Publicar artigo</button>
       </form>
