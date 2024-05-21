@@ -1,6 +1,11 @@
+const multer = require('multer');
+const storage = require('./multerConfig').storage;
+
 const express = require('express');
 const app = express();
 app.use(express.json())
+
+const upload = multer({storage: storage})
 
 const cors = require('cors')
 app.use(cors());
@@ -8,7 +13,6 @@ app.use(cors());
 require('./db/connection');
 const Post = require('./Models/Post')
 const Projeto = require('./Models/Projetos');
-
 
 app.get("/projetos", async(req, res) => {
     try {
@@ -18,6 +22,7 @@ app.get("/projetos", async(req, res) => {
         res.status(500).json({ message: err.message });
     }
 });
+
 
 app.patch("/projetos/:id", async(req, res) => {
     const { id } = req.params;
@@ -35,6 +40,16 @@ app.patch("/projetos/:id", async(req, res) => {
         res.status(400).json({ message: err.message });
     }
 });
+
+app.delete("/projetos", async (req, res) => {
+    try {
+        const result = await Projeto.deleteMany({});
+        res.json({ message: `${result.deletedCount} projetos excluídos com sucesso` });
+    } catch (err) {
+        res.status(500).json({ message: err.message });
+    }
+});
+
 app.delete("/projetos/:id", async (req, res) => {
     const { id } = req.params;
     try {
@@ -61,13 +76,10 @@ app.get("/projetos/:id", async (req, res) => {
     }
 });
 
-
-
-
-app.post("/projetos", async(req, res) => {
-    const { title, description } = req.body;
+app.post("/projetos", async (req, res) => {
+    const { title, description, content, author } = req.body;
     try {
-        const novoProjeto = new Projeto({ title, description });
+        const novoProjeto = new Projeto({ title, description, content, author });
         const projetoSalvo = await novoProjeto.save();
         res.status(201).json(projetoSalvo);
     } catch (err) {
@@ -75,10 +87,17 @@ app.post("/projetos", async(req, res) => {
     }
 });
 
+app.post("/projetos/upload", upload.single('file'), async (req, res) => {
+    return res.json(req.file.filename);
+});
+
+
 app.post("/", async(req,res)=> {
     let post = new Post(req.body);
     let result = await post.save();
     res.send(result)
 })
 
-app.listen(4000);
+app.listen(4000), () => {
+        console.log('app is running!')
+};

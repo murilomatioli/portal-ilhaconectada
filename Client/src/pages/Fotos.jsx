@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./about.module.css"
-import HeaderComponent from "../components/headerComponent";
+import styles from "./fotos.module.css"
+
 function FotosPage (){
     return(
         <>

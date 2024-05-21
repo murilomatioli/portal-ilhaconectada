@@ -1,0 +1,51 @@
+.gridContainer {
+    display: grid;
+    position: absolute;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    justify-content: center;
+    left: 50%; 
+    transform: translateX(-50%);
+}
+.gridItem {
+    border: 1px solid #ccc;
+    padding: 3px 10px 17px 10px;
+    width: 150px;
+    border-radius: 8px;
+    background-color: white;
+
+    height: 250px;
+    transition: 0.1s;
+    position: relative;
+    border-bottom: 7px solid rgb(61, 129, 230);
+    display: block;
+}
+.gridItem:hover {
+    padding: 3px 13px 23px 13px;
+    cursor: pointer;
+}
+.ArticleTitle {
+    font-size: 20px;
+    text-align: center;
+}
+.gridDescription {
+    margin: 6px 0;
+    display: flex;
+    padding: 0 10px;
+    hyphens: auto;
+    text-indent: 10px;
+}
+.descriptionContainer {
+    max-width: 100%;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid #ccc;
+    height: 55%;
+}
+
+@media screen and (max-width: 750px) {
+    .gridContainer {
+        grid-template-columns: repeat(3,1fr);
+    }
+}

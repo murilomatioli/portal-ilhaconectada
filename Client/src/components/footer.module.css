@@ -1,11 +1,9 @@
-/* Estilos CSS para o corpo do footer */
 .footerBody {
-    display: flex;
+
+    display: block;
     background-color: #029adb;
-    position: absolute;
     width: 100%;
-    height: 200px; /* Defina a altura do footer conforme necessário */
-    margin-top: auto; /* Isso empurra o footer para o final da página */
+    height: 200px;
 }
 
 .footerWrapper {
@@ -37,7 +35,7 @@
         margin: 0 10px;
     }
     .footerBody {
-        height: fit-content; /* Defina a altura do footer conforme necessário */
-        margin-top: auto; /* Isso empurra o footer para o final da página */
+        height: fit-content;
+        margin-top: auto;
     }
 }

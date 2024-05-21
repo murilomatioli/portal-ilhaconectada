@@ -10,8 +10,8 @@
 }
 .postContainer {
     position: absolute;
-    top: 50%; /* Coloca a lista na metade da altura do cabeçalho */
-    transform: translateY(-50%); /* Move a lista para trás em 50% da sua própria altura */
+    top: 50%; 
+    transform: translateY(-50%); 
     display: inline-flex;
     width: 67%;
     justify-content: right;

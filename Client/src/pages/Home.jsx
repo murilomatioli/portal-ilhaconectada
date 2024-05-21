@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./home.module.css"
 import { AiOutlineMenu } from "react-icons/ai";
-import GridComponent from "../components/gridComponent";
+import GridComponent from "../components/gridProject";
 
 function HomePage (){
     return(
