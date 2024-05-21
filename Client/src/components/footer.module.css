@@ -1,4 +1,3 @@
-/* Estilos CSS para o corpo do footer */
 .footerBody {
 
     display: block;
@@ -36,7 +35,7 @@
         margin: 0 10px;
     }
     .footerBody {
-        height: fit-content; /* Defina a altura do footer conforme necessário */
-        margin-top: auto; /* Isso empurra o footer para o final da página */
+        height: fit-content;
+        margin-top: auto;
     }
 }

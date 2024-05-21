@@ -9,19 +9,17 @@ function ArticleBase() {
 
 
   useEffect(() => {
-    // Defina a URL do endpoint do backend onde você pode buscar os dados do artigo
+    //endpoint
     const apiUrl = `http://localhost:4000/projetos/${id}`;
 
-    // Solicitação GET para buscar os dados do artigo com base no ID
     axios.get(apiUrl)
       .then(response => {
-        // Defina os dados do artigo no estado
         setArticleData(response.data);
       })
       .catch(error => {
         console.error("Erro ao buscar dados do artigo:", error);
       });
-  }, [id]); // Execute o efeito sempre que o ID do artigo mudar
+  }, [id]); 
 
   return (
     <div className={styles.articleContainer}>

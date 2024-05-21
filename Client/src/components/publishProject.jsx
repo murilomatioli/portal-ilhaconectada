@@ -1,4 +1,3 @@
-// PublishProjectComponent.js
 import React, { useState } from "react";
 import styles from "../components/publishProject.module.css";
 import ReactQuill from 'react-quill';

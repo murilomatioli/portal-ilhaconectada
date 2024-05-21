@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./projetos.module.css";
-import { Link } from "react-router-dom"; // Importe o componente Link
-
+import { Link } from "react-router-dom";
 function ProjetoseArtigosPage() {
     const [projetos, setProjetos] = useState([]);
 
